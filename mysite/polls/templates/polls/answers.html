@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for a in answers %}
+        <li>{{ a }}</li>
+    {% endfor %}
+    <a href="{% url 'polls_view:index' %}">RETURN TO INDEX PAGE</a>
+{% endblock %}

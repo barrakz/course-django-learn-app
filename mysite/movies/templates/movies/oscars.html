@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for o in oscars %}
+        <li>{{ o }}</li>
+    {% endfor %}
+    <a href="{% url 'movies:index-movies' %}">RETURN TO INDEX PAGE</a>
+{% endblock %}

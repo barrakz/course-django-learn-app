@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>ACTOR ID: {{ actor.id }}</p>
+    <p>ACTOR NAME: {{ actor.name }}</p>
+    <p>ACTOR LAST NAME: {{ actor.last_name }}</p>
+    <p><a href="{% url 'actors-list-view' %}">Go to Actors page!</a></p>
+{% endblock %}

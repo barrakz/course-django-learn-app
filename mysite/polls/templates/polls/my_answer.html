@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>ANSWER ID: {{ answer.id }}</p>
+    <p>ANSWER TEXT: {{ answer.answer_text }}</p>
+    <p><a href="{% url 'answers' %}">Go to main answers page!</a></p>
+{% endblock %}

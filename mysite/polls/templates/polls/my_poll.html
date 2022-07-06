@@ -1,0 +1,8 @@
+<{% extends "base.html" %}
+{% block content %}
+    <p>POLL ID: {{ poll.id }}</p>
+    <p>POLL NAME: {{ poll.name }}</p>
+    <p><a href="{% url 'polls:polls-update-view' pk=poll.pk %}">UPDATE</a></p>
+    <p><a href="{% url 'polls:polls-delete-view' pk=poll.pk %}">DELETE</a></p>
+    <a href="{% url 'polls_view:index' %}">RETURN TO INDEX PAGE</a>
+{% endblock %}

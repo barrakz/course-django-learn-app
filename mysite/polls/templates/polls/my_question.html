@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>QUESTION ID: {{ question.id }}</p>
+    <p>QUESTION TEXT: {{ question.question_text }}</p>
+    <p><a href="{% url 'questions' %}">Go to questions page!</a></p>
+{% endblock %}

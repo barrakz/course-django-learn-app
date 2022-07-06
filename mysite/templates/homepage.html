@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>Welcome {{ user }}!</p>
+    <p><a href="{% url 'movies:index-movies' %}"> MOVIES INDEX</a></p>
+    <p><a href="{% url 'polls_view:index' %}"> POLLS INDEX</a></p>
+{% endblock %}

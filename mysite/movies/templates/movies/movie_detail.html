@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>MOVIE ID: {{ movie.id }}</p>
+    <p>MOVIE TITLE: {{ movie.title }}</p>
+    <p>MOVIE YEAR PRODUCTION: {{ movie.year }}</p>
+    <p><a href="{% url 'movies-list-view' %}">Go to Movie page!</a></p>
+{% endblock %}

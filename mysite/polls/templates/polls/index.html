@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+    <p><a href="{% url 'polls_view:polls' %}">POLLS</a></p>
+    <p><a href="{% url 'polls_view:questions' %}">QUESTIONS</a></p>
+    <p><a href="{% url 'polls_view:answers' %}">ANSWERS</a></p>
+{% endblock %}

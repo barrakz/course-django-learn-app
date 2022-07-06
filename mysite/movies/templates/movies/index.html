@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    <p><a href="{% url 'movies:actors-list-view' %}">ACTORS</a></p>
+    <p><a href="{% url 'movies:countries-class-view' %}">COUNTRIES</a></p>
+    <p><a href="{% url 'movies:movies-class-view' %}">MOVIES</a></p>
+    <p><a href="{% url 'movies:oscars-class-view' %}">OSCARS</a></p>
+{% endblock %}
